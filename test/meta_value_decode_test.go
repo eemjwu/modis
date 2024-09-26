@@ -35,7 +35,7 @@ func (lmv *ListMetaValue) Print() {
 }
 
 func TestDecodeListMetaValue(t *testing.T) {
-	encodMsg := "019B808080000B808080FBFFFFFFFFFF01000002808480809001E083AAD7F6F71F"
+	encodMsg := "019B80808000000000FFFFFFFFFFFFFFFF7F02F094D39DA18008FC94D39DA18008"
 	// 使用hex包中的DecodeString函数把十六进制字符串解码成字节切片
 	data, err := hex.DecodeString(encodMsg)
 	if err != nil {
